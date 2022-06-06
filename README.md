@@ -12,13 +12,16 @@ SOC 401-2, Final Project (Spring 2022)
 	- Excluded 19 influential observations for the full logistic regression 
 	  model (N=605)
    
-**Research Questions: **
-  1) RQ1. How does the negative valence of the relationship between eating 
+**Research Questions:**
+      
+        1) RQ1. How does the negative valence of the relationship between eating 
 	   disorders and new media in the news coverage change over time from 2010 
 	   to 2019?
+	   
 	2) RQ2. Is having specific eating disorder diagnoses, a)anorexia or 
 	   b)bulimia, referenced in the article associated with a negative valence 
 	   of the relationship between eating disorders and new media? 
+	   
 	3) RQ3. Is having a specific social media platform, a)Facebook, b)Instagram, 
 	   c)Tumblr or d)YouTube), referenced in the article associated with a 
 	   negative valence of the relationship between eating disorders and new 
@@ -101,22 +104,28 @@ SOC 401-2, Final Project (Spring 2022)
 
 
 **Order in which to run analyses:**
+    
     1. Create a main folder, which will be the working directory for the project.
         	~ Original folder is called "SP22_SOC401".
+   
     2. Create sub-folders within the main folder to house raw data, working data, scripts, figures 
        and outputs, and log files.
         	~ Original sub-folders called "data_raw", "data_work", "scripts", "figs_outputs" and 
         	  "log_files".
+   
     3. Save the raw data file in the raw data folder (serves as backup) and in the working data 	 
        folder (servers as working file). 
         	~ raw data: "raw_USA_EDandNM_v1.dta"
+    
     4. Save the working data file in the working data folder (servers as working file). 
           ~ working data (removed 2 missing values from DV): edited_original_USA_EDandNM_v2.dta
           ~ working data (excluded 19 influential observations): edited_original_USA_EDandNM_v3.dta
+    
     5. Open the "data_cleaning.do" script in Stata and click "Execute (do). 
           ~ Make sure to change the working directory for the project and adjust any file paths in the 
             "Set Up Environment" section of the script to ensure all the data is being routed 
             correctly. 
+    
     6. Open the "data_analyses.do" script in Stata and click "Execute (do). 
           ~ Make sure to change the working directory for the project and adjust any file paths in the 
             "Set Up Environment" section of the script to ensure all the data is being routed 
