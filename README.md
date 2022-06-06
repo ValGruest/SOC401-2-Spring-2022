@@ -99,7 +99,7 @@ SOC 401-2, Final Project (Spring 2022)
           ~ Tables 
             - Descriptive statistics and regression results 
 
-	    *Note: The "data_cleaning.do" script needs to be run prior to this script, 
+	    * Note: The "data_cleaning.do" script needs to be run prior to this script, 
 	     "data_analyses.do".
 
 
