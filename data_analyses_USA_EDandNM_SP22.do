@@ -17,18 +17,22 @@
 in U.S. News Coverage" 
 
    Original Dataset: ED & New Media 
-    - Excluded 2 observations with missing values for DV
+    - Excluded 2 observations with missing values for DV - negative article 
+	  valence (N=624)
+	- Excluded 19 influential observations for the full logistic regression 
+	  model (N=605)
    
    Research Questions: 
     1) RQ1. How does the negative valence of the relationship between eating 
-	disorders and new media in the news coverage change over time from 2010 to 
-	2019?
+	   disorders and new media in the news coverage change over time from 2010 
+	   to 2019?
 	2) RQ2. Is having specific eating disorder diagnoses, a)anorexia or 
-	b)bulimia, referenced in the article associated with a negative valence of 
-	the relationship between eating disorders and new media? 
+	   b)bulimia, referenced in the article associated with a negative valence 
+	   of the relationship between eating disorders and new media? 
 	3) RQ3. Is having a specific social media platform, a)Facebook, b)Instagram, 
-	c)Tumblr or d)YouTube), referenced in the article associated with a negative 
-	valence of the relationship between eating disorders and new media? 
+	   c)Tumblr or d)YouTube), referenced in the article associated with a 
+	   negative valence of the relationship between eating disorders and new 
+	   media?  
 
    
    Outcome I am estimating: Negative Article Valence 
@@ -38,13 +42,13 @@ in U.S. News Coverage"
 		~ Article_Valence_Binary_Negative (binary)
 
 	 - Independent variables: 
-		~ Article_Year
-		~ ED_Anorexia
-		~ ED_Bulimia
-		~ NM_SM_Facebook
-		~ NM_SM_Instagram 
-		~ NM_SM_Tumblr
-		~ NM_SM_YouTube
+		~ Article_Year (continuous)
+		~ ED_Anorexia (binary)
+		~ ED_Bulimia (binary)
+		~ NM_SM_Facebook (binary)
+		~ NM_SM_Instagram (binary)
+		~ NM_SM_Tumblr (binary)
+		~ NM_SM_YouTube (binary)
 
 	Missing Values: The only variable with missing data values was the variable 	
 	referencing article valence, with 2 missing values accounting for 0.32% of 
@@ -91,25 +95,27 @@ in U.S. News Coverage"
 		data for the project, which will be working with Logistic Regression 
 		Models. The following was done to prepare the data: 
 	 
-		 *Data: raw_USA_EDandNM_v1.dta
-			~ Explored original data
-			~ Managed missing values
-			~ Cleaned variables 
-				- Created indicator/dummy variables
-				- Recoded variables
-				- Labeled variables
+		 *Data: edited_original_USA_EDandNM_v2.dta
 			~ Subsetted data (only kept variables needed for analyses)
 				- saved data : edited_original_USA_EDandNM_v2.dta
-				- summary statistics and visualizing variables
+				- this has 2 missing obs. removed for Negative Article Valence
+				  (N=624)
+			~Subsetted data (only kept variables needed for analyses)
+				- saved data: edited_original_USA_EDandNM_v3.dta
+				- this excluded 19 influential observations for the full 
+				  logistic regression model (N=605)
 	
 	
 	Task for this script file: Analyses - Exploring Project Data and Running  
 	Logistic Regression Models
 	 *Data: edited_original_USA_EDandNM_v2.dta
 		~ Exploring and visualizing data for the project
+			- Checked for influential observations
 			- Summary statistics and visualizing variables
-		~ Assessing OLS linear regression assumptions
-		~ Running OLS linear regressions
+		~ Assessing logistic regression assumptions
+		~ Running logistic regression models
+			- Various interpretations
+			- Compared models 
 		~ Tables 
 			- Descriptive statistics and regression results 
 	
