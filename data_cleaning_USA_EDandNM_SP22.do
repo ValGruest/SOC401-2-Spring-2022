@@ -20,15 +20,16 @@ in U.S. News Coverage"
    - Excluded 2 observations with missing values for DV
    
    Research Questions: 
-   1)  1) RQ1. How does the negative valence of the relationship between eating 
-	disorders and new media in the news coverage change over time from 2010 to 
-	2019?
+    1) RQ1. How does the negative valence of the relationship between eating 
+	   disorders and new media in the news coverage change over time from 2010 
+	   to 2019?
 	2) RQ2. Is having specific eating disorder diagnoses, a)anorexia or 
-	b)bulimia, referenced in the article associated with a negative valence of 
-	the relationship between eating disorders and new media? 
+	   b)bulimia, referenced in the article associated with a negative valence 
+	   of the relationship between eating disorders and new media? 
 	3) RQ3. Is having a specific social media platform, a)Facebook, b)Instagram, 
-	c)Tumblr or d)YouTube), referenced in the article associated with a negative 
-	valence of the relationship between eating disorders and new media? 
+	   c)Tumblr or d)YouTube), referenced in the article associated with a 
+	   negative valence of the relationship between eating disorders and new 
+	   media? 
 
    
    Outcome I am estimating: Negative Article Valence 
@@ -38,13 +39,13 @@ in U.S. News Coverage"
 		~ Article_Valence_Binary_Negative (binary)
 
 	 - Independent variables: 
-		~ Article_Year
-		~ ED_Anorexia
-		~ ED_Bulimia
-		~ NM_SM_Facebook
-		~ NM_SM_Instagram 
-		~ NM_SM_Tumblr
-		~ NM_SM_YouTube
+		~ Article_Year (continuous)
+		~ ED_Anorexia (binary)
+		~ ED_Bulimia (binary)
+		~ NM_SM_Facebook (binary)
+		~ NM_SM_Instagram (binary)
+		~ NM_SM_Tumblr (binary)
+		~ NM_SM_YouTube (binary)
 
 	Missing Values: The only variable with missing data values was the variable 	
 	"State", with 11 missing values accounting for 8.4% of missing cases for 
